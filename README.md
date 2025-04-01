@@ -76,37 +76,51 @@ Usage / Kullanım
 
 Artisan Commands / Artisan Komutları
 You can use Laravel's Artisan commands through Sail like this:
+
 ./vendor/bin/sail artisan [command]
 
 
 For example, to run the tinker shell:
+
 ./vendor/bin/sail artisan tinker
 
 
 Composer Commands / Composer Komutları
+
 To install Composer packages, you can use:
+
 ./vendor/bin/sail composer require [package-name]
 
 
 Logs / Loglar
+
 To view the logs of your application:
+
 ./vendor/bin/sail logs
 
 
 Docker Management / Docker Yönetimi
+
 Start the containers: ./vendor/bin/sail up -d
+
 Stop the containers: ./vendor/bin/sail down
+
 Stop and remove volumes (clean reset): ./vendor/bin/sail down --volumes
 
 
-Troubleshooting / Sorun Giderme
-If you encounter any issues with Docker containers, you can check logs or restart the containers:
 
+Troubleshooting / Sorun Giderme
+
+If you encounter any issues with Docker containers, you can check logs or restart the containers
 
 ./vendor/bin/sail logs
+
 ./vendor/bin/sail restart
+
 For any errors related to the database, try running migrations again:
+
 ./vendor/bin/sail artisan migrate:refresh
+
 
 
 License / Lisans
