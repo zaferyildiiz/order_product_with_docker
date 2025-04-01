@@ -16,10 +16,9 @@ Bu proje, Laravel Sail ile Docker ortamında çalışan bir sipariş ve ürün y
 
 ## 🛠️ Kurulum
 
-
+```bash
 1- Projeyi Klonlayın
 
-```bash
 git clone https://github.com/zaferyildiiz/order_product_with_docker.git
 cd order_product_with_docker
 
